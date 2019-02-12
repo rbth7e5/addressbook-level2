@@ -55,6 +55,23 @@
   add Esther Potato p/555555 e/esther@not.a.real.potato pa/555, epsilon street t/tubers t/starchy
 
 ##########################################################
+# test edit person command
+##########################################################
+
+  # should catch invalid args format
+  edit wrong args wrong args
+  edit Valid Name Invalid Replacement
+
+  # should edit correctly and list non private information
+  edit Esther Potato n/Esther Tomato
+  list
+  edit Esther Tomato n/Esther Potato
+  list
+
+  # should not allow editing person that does not exist
+  edit Nonexistent Person n/Existent Person
+
+##########################################################
 # test view/viewall persons command
 ##########################################################
 

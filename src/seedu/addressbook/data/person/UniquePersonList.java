@@ -111,6 +111,22 @@ public class UniquePersonList implements Iterable<Person> {
     }
 
     /**
+     * Get a person matching the input name
+     *
+     * @param name the name to be found
+     * @return the person found
+     * @throws PersonNotFoundException if no such person could be found in the list
+     */
+    public Person get(Name name) throws PersonNotFoundException {
+        for (Person person: internalList) {
+            if (person.getName().equals(name)) {
+                return person;
+            }
+        }
+        throw new PersonNotFoundException();
+    }
+
+    /**
      * Removes the equivalent person from the list.
      *
      * @throws PersonNotFoundException if no such person could be found in the list.

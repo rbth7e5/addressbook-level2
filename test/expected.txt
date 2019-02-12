@@ -138,6 +138,43 @@
 || Enter command: || [Command entered:  add Esther Potato p/555555 e/esther@not.a.real.potato pa/555, epsilon street t/tubers t/starchy]
 || This person already exists in the address book
 || ===================================================
+|| Enter command: || [Command entered:  edit wrong args wrong args]
+|| Invalid command format! 
+|| edit: Edits a person's name in the address book. Parameters: NAME n/NEW_NAME
+|| Example: edit John Doe n/Johnny Doe
+|| ===================================================
+|| Enter command: || [Command entered:  edit Valid Name Invalid Replacement]
+|| Invalid command format! 
+|| edit: Edits a person's name in the address book. Parameters: NAME n/NEW_NAME
+|| Example: edit John Doe n/Johnny Doe
+|| ===================================================
+|| Enter command: || [Command entered:  edit Esther Potato n/Esther Tomato]
+|| Esther Potato is now called Esther Tomato
+|| ===================================================
+|| Enter command: || [Command entered:  list]
+|| 	1. Adam Brown Phone: 111111 Email: adam@gmail.com Address: 111, alpha street Tags: 
+|| 	2. Betsy Choo Tags: [secretive]
+|| 	3. Charlie Dickson Email: charlie.d@nus.edu.sg Address: 333, gamma street Tags: [school][friends]
+|| 	4. Dickson Ee Phone: 444444 Address: 444, delta street Tags: [friends]
+|| 	5. Esther Tomato Phone: 555555 Email: esther@not.a.real.potato Tags: [tubers][starchy]
+|| 
+|| 5 persons listed!
+|| ===================================================
+|| Enter command: || [Command entered:  edit Esther Tomato n/Esther Potato]
+|| Esther Tomato is now called Esther Potato
+|| ===================================================
+|| Enter command: || [Command entered:  list]
+|| 	1. Adam Brown Phone: 111111 Email: adam@gmail.com Address: 111, alpha street Tags: 
+|| 	2. Betsy Choo Tags: [secretive]
+|| 	3. Charlie Dickson Email: charlie.d@nus.edu.sg Address: 333, gamma street Tags: [school][friends]
+|| 	4. Dickson Ee Phone: 444444 Address: 444, delta street Tags: [friends]
+|| 	5. Esther Potato Phone: 555555 Email: esther@not.a.real.potato Tags: [tubers][starchy]
+|| 
+|| 5 persons listed!
+|| ===================================================
+|| Enter command: || [Command entered:  edit Nonexistent Person n/Existent Person]
+|| This person does not exist in the address book
+|| ===================================================
 || Enter command: || [Command entered:  view]
 || Invalid command format! 
 || view: Views the non-private details of the person identified by the index number in the last shown person listing.
